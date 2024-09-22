@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(48, 23, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    width: 90%;
+    max-width: 500px;
+    background-color: whitesmoke;
+    padding: 50px 30px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.disable-form{
+    visibility:hidden;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: whitesmoke;
+    box-shadow: 0 2px 2px rgba(255, 26, 26, 0.22);
+    border-radius: 50%;
+    padding: 20px;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+.input-grp{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input-grp label{
+    flex-basis: 28%;
+    font-weight: 500;
+}
+.input-grp input, .input-grp textarea{
+    flex-basis: 70%;
+    background: transparent;
+    padding: 12px 0;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid rgb(137, 106, 106);
+    color: 3#333;
+    font-size: 16px;
+}::placeholder{
+    font-size: 14px;
+}
+form button{
+    background: #3c3f4e;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+    margin: 30px auto 10px ;
+    display: block;
+}
+.input-grp span{
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    font-size: 14px;
+    color: red;
+}
+.input-grp span i{
+    color: green;
+    font-size: 14px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transfrom 0.4s, top 0.5s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform:translate(-50%,-50%)scale(1);
+
+}
+.popup img{
+    width: 100px;
+    margin-top: -16%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px black;
+}
+.popup h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 10px 0px 20px 10px;
+}
+.popup button{
+    width: 88%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px black;
+}
